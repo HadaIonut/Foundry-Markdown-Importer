@@ -434,7 +434,6 @@ const getLegendaryActions = (text) => {
  */
 const getNumberOfLegendaryActions = (text) => {
   const legendaryActionDescription = text.match(/> .* can take ([0-9]+) legendary actions, .*/);
-
   return Number(legendaryActionDescription?.[1]);
 };
 
@@ -445,7 +444,6 @@ const getNumberOfLegendaryActions = (text) => {
  */
 const getNumberOfLegendaryResistances = (text) => {
   const legendaryRes = text.match(/> \*\*\*Legendary Resistance \(([0-9]+)\/Day\)\.\*\*\*/);
-
   return Number(legendaryRes?.[1]);
 };
 
